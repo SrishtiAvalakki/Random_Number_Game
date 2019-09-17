@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+
+	<style type="text/css">
+		
+			
+	</style>
+
+
+
+
+
+</head> 
+<body>
+	  
+	  <p>HOW MANY FINURES AM I HOLDING UP?</p>
+	  <p><input type="text" id="fing"></p>
+	  <p><button id="guess">Guess!</button></p>
+	  <script type="text/javascript">
+
+	  	document.getElementById("guess").onclick = function() {
+	  		var randomNumber = Math.random();
+	  		randomNumber = randomNumber * 6;
+	  		randomNumber = Math.floor(randomNumber);
+
+	  	var enterednumber = document.getElementById("fing").value
+
+	  		if(enterednumber == randomNumber)
+	  		{
+	  			alert("you were right");
+	  		}
+	  		else{
+	  			alert("opps the number was "+ randomNumber);
+	  		}
+
+
+	  	}
+
+		 //alert(Math.floor(Math.random()* 6));
+
+
+	 </script>
+		
+		
+		
+</body>
+</html>
